@@ -6,55 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="app.css"></link>
+    
 </head>
 <body>
     <h1 align= "center">Money Budgeter</h1>
     <p>On this app, we'll be helping you to budget and find out where you may need to cut spending in each area, monthly, based off of your paychecks and the amount you spend per pay period. </p>
-    <form>
+    <!-- <form> -->
         <fieldset>
           <legend>Budget</legend>
           <p>
             <label>Monthly Income</label>
             <input type = "text"
-                   id = "myText"
-                   value = "income" />
+                   id = "income">
           </p>
 
           <p>How much money is leaving your wallet per month?</p>
 
           <p>
             <label>Food</label> 
-            <input id = "food"> 
-            
+            <input type ="text" id = "food"> 
+            <p id="foodWarning"></p>
+
           </p>
 
           <p>
           <label>Gas</label> 
-            <input id = ""> 
+            <input type ="text" id = "gas"> 
+            <p id="gasWarning"></p>
           </p>
 
           <p>
             <label>Rent</label> 
-              <input id = "myText"> 
+              <input type ="text" id = "rent"> 
+              <p id="rentWarning"></p>
           </p>
 
           <p>
             <label>Insurance</label> 
-              <input id = "myText"> 
+              <input type ="text" id = "ins">
+              <p id= "insWarning"></p> 
           </p>
 
           <p>
             <label>Miscellaneous</label> 
-              <input id = "myText"> 
+              <input type ="text" id = "misc">
+              <p id="miscWarning"></p> 
           </p>
-          <input type="submit" value="submit"/>
+          <button class="submit">Submit</button>
+          <button class="reset">Reset</button>
           </fieldset>
+    <!-- </form> -->
+         
 
-          <!-- <p>
-            <label>Text Area</label>
-            <textarea> id = "myTextArea"
-                    rows = "3"
-                    cols = "80">Your text here</textarea>
-          </p> -->
+    
 </body>
+<script src="app.js"></script>
 </html>
